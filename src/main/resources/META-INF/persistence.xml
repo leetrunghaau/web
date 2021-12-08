@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="test" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+
+                <class>com.webmvc.chiken.model.entity.AddressEntity</class>
+        <class>com.webmvc.chiken.model.entity.BillEntity</class>
+        <class>com.webmvc.chiken.model.entity.CartEntity</class>
+
+        <class>com.webmvc.chiken.model.entity.CategoriesEntity</class>
+        <class>com.webmvc.chiken.model.entity.CustomerEntity</class>
+
+
+        <class>com.webmvc.chiken.model.entity.ProductEntity</class>
+        <class>com.webmvc.chiken.model.entity.FeedbackEntity</class>
+
+        <class>com.webmvc.chiken.model.entity.ViewProductEntity</class>
+
+
+        <class>com.webmvc.chiken.model.entity.ViewBillEntity</class>
+        <class>com.webmvc.chiken.model.entity.ViewBillItemEntity</class>
+        <class>com.webmvc.chiken.model.entity.DiscountEntity</class>
+        <class>com.webmvc.chiken.model.entity.BillItemEntity</class>
+
+        <!--        <class></class>-->
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://ec2-54-224-142-15.compute-1.amazonaws.com:5432/darschqvp4f5i8"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.username" value="hrthdlukbngedk"/>
+            <property name="hibernate.connection.password" value="f930961bc226db2f8e73ff29501d5a0ac74425c31217faa9f18461b19e0ab7c8"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.connection.CharSet" value="utf8"/>
+            <property name="hibernate.connection.characterEncoding" value="utf8"/>
+            <property name="hibernate.connection.useUnicode" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>-->
+
+            <property name="hibernate.c3p0.min_size" value="5" />
+            <property name="hibernate.c3p0.max_size" value="20" />
+            <property name="hibernate.c3p0.timeout" value="300" />
+            <property name="hibernate.c3p0.max_statements" value="50" />
+            <property name="hibernate.c3p0.idle_test_period" value="120" />
+
+        </properties>
+    </persistence-unit>
+</persistence>
