@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="reverseEngineeringLastDbConnectionId" value="ad3a1e56-9257-412d-b5a8-1539fdff8b23" />
+    <option name="reLastEntityCreationPackage" value="src/main/java/com/webmvc/chiken/model/entity" />
+  </component>
+</project>
